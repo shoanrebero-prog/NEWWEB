@@ -1,0 +1,392 @@
+{
+ "hero-port": {
+  "dir": "hero",
+  "widths": [
+   640,
+   960,
+   1280,
+   1920,
+   2400
+  ],
+  "width": 2400,
+  "height": 1276,
+  "color": "#2f2b2c",
+  "alt": "Container terminal at dusk with ship-to-shore cranes and stacked containers",
+  "source": "https://unsplash.com/photos/shipping-port-with-containers-and-cranes-sWOvgOOFk1g"
+ },
+ "p01-gypsum": {
+  "dir": "products",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2000
+  ],
+  "width": 2000,
+  "height": 1333,
+  "color": "#6a727b",
+  "alt": "Stockpiled mineral material with a radial stacker conveyor at a processing plant",
+  "source": "https://unsplash.com/photos/large-sand-and-gravel-piles-with-industrial-conveyors-HkxPrTZGEl8"
+ },
+ "p01-boards": {
+  "dir": "detail",
+  "widths": [
+   480,
+   800,
+   1200
+  ],
+  "width": 1200,
+  "height": 900,
+  "color": "#413a35",
+  "alt": "Pallets of stacked plasterboard in warehouse racking",
+  "source": "https://unsplash.com/photos/stack-of-wooden-planks-on-brates-12f58hsO1Gk"
+ },
+ "p01-lumps": {
+  "dir": "detail",
+  "widths": [
+   480,
+   800,
+   1200
+  ],
+  "width": 1200,
+  "height": 800,
+  "color": "#6e6760",
+  "alt": "Raw gypsum-type mineral lumps",
+  "source": "https://unsplash.com/photos/brown-and-white-stone-fragments-4X5ySjDNLPg"
+ },
+ "p01-powder": {
+  "dir": "detail",
+  "widths": [
+   480,
+   800,
+   1200
+  ],
+  "width": 1200,
+  "height": 600,
+  "color": "#292b2d",
+  "alt": "White mineral powder stockpile",
+  "source": "https://unsplash.com/photos/rough-snow-covered-terrain-against-a-dark-background-oIw4LRylwg8"
+ },
+ "p02-cables": {
+  "dir": "products",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2000
+  ],
+  "width": 2000,
+  "height": 1500,
+  "color": "#17100e",
+  "alt": "Coiled copper conductors catching warm light",
+  "source": "https://unsplash.com/photos/white-and-brown-spiral-light-Uwq_F5G4yOo"
+ },
+ "p02-drums": {
+  "dir": "detail",
+  "widths": [
+   480,
+   800,
+   1200
+  ],
+  "width": 1200,
+  "height": 900,
+  "color": "#242016",
+  "alt": "Cable drums loaded with power cable",
+  "source": "https://unsplash.com/photos/a-pile-of-yellow-and-green-hoses-sitting-on-the-side-of-a-road-gc85oQrQCt0"
+ },
+ "p02-braid": {
+  "dir": "detail",
+  "widths": [
+   480,
+   800,
+   1200
+  ],
+  "width": 1200,
+  "height": 800,
+  "color": "#28190f",
+  "alt": "Stranded copper conductor detail",
+  "source": "https://unsplash.com/photos/a-close-up-of-a-rope-on-a-black-background-xPVUA7Jrl58"
+ },
+ "p03-electrical-equipment": {
+  "dir": "products",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "width": 1600,
+  "height": 1066,
+  "color": "#353633",
+  "alt": "Low-voltage switchgear panels lining an electrical room",
+  "source": "https://unsplash.com/photos/gray-machine-s89Z5V0plTY"
+ },
+ "p04-racking": {
+  "dir": "products",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2000
+  ],
+  "width": 2000,
+  "height": 1333,
+  "color": "#534e3d",
+  "alt": "Forklift in an aisle of selective pallet racking",
+  "source": "https://unsplash.com/photos/a-large-warehouse-filled-with-lots-of-pallets-OnbSOhz0oig"
+ },
+ "p04-racking-b": {
+  "dir": "detail",
+  "widths": [
+   480,
+   800,
+   1200
+  ],
+  "width": 1200,
+  "height": 900,
+  "color": "#3d3636",
+  "alt": "Newly installed pallet racking in a distribution warehouse",
+  "source": "https://unsplash.com/photos/a-warehouse-with-blue-and-yellow-poles-qXwXKwaT8mU"
+ },
+ "p05-steel": {
+  "dir": "products",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "width": 1600,
+  "height": 1200,
+  "color": "#100f0e",
+  "alt": "Stacked steel pipes seen end-on in a stockyard",
+  "source": "https://unsplash.com/photos/a-large-stack-of-pipes-stacked-on-top-of-each-other-F4nEetWGt0A"
+ },
+ "p06-valves": {
+  "dir": "products",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "width": 1600,
+  "height": 1066,
+  "color": "#6b665e",
+  "alt": "Flanged gate valves with red handwheels on plant pipework",
+  "source": "https://unsplash.com/photos/industrial-pipes-with-red-valves-PBhR1Kw1wXk"
+ },
+ "p07-polymers": {
+  "dir": "products",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "width": 1600,
+  "height": 1066,
+  "color": "#193e4a",
+  "alt": "Polymer resin granules",
+  "source": "https://unsplash.com/photos/blue-and-white-square-beads-ooxMySOfRRU"
+ },
+ "p08-chemicals": {
+  "dir": "products",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "width": 1600,
+  "height": 1200,
+  "color": "#242f43",
+  "alt": "Stacked steel chemical drums",
+  "source": "https://unsplash.com/photos/stacked-industrial-metal-barrels-yKs_eEXZEzg"
+ },
+ "p09-machinery": {
+  "dir": "products",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "width": 1600,
+  "height": 1067,
+  "color": "#3c4457",
+  "alt": "Automated production line in a modern manufacturing hall",
+  "source": "https://unsplash.com/photos/a-large-machine-in-a-large-building-pWUyHVJgLhg"
+ },
+ "p10-agriculture": {
+  "dir": "products",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "width": 1600,
+  "height": 900,
+  "color": "#385134",
+  "alt": "Centre-pivot irrigation over a green crop field",
+  "source": "https://unsplash.com/photos/a-sprinkler-spraying-water-on-a-green-field-6DMht7wYt6g"
+ },
+ "p11-pumps": {
+  "dir": "products",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "width": 1600,
+  "height": 1064,
+  "color": "#334349",
+  "alt": "Inline pump sets with pressure gauges and valves in a plant room",
+  "source": "https://unsplash.com/photos/a-group-of-pipes-and-valves-in-a-room-KWZMx4T8Y1k"
+ },
+ "p12-generators": {
+  "dir": "products",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "width": 1600,
+  "height": 1200,
+  "color": "#4f5756",
+  "alt": "Diesel generator sets with exhaust stacks at a power installation",
+  "source": "https://unsplash.com/photos/a-factory-with-a-lot-of-green-and-white-machinery-wUuq69GGLnU"
+ },
+ "p13-engines": {
+  "dir": "products",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "width": 1600,
+  "height": 1066,
+  "color": "#323739",
+  "alt": "Diesel engine fuel injection pump and manifold detail",
+  "source": "https://unsplash.com/photos/vehicle-engine-xnqvX5u-ZGQ"
+ },
+ "p14-construction": {
+  "dir": "products",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "width": 1600,
+  "height": 1066,
+  "color": "#615144",
+  "alt": "Wheel loader carrying a full bucket on a site",
+  "source": "https://unsplash.com/photos/yellow-and-black-heavy-equipment-on-brown-field-during-daytime-N1LBcqLP9ec"
+ },
+ "p15-cleaning": {
+  "dir": "products",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "width": 1600,
+  "height": 1066,
+  "color": "#444132",
+  "alt": "Operator cleaning paving with a high-pressure washer",
+  "source": "https://unsplash.com/photos/a-man-in-a-yellow-jacket-is-using-a-pressure-washer-e2k842P9a2I"
+ },
+ "p16-compressors": {
+  "dir": "products",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "width": 1600,
+  "height": 1066,
+  "color": "#2e3434",
+  "alt": "Twin-cylinder piston air compressor on its receiver",
+  "source": "https://unsplash.com/photos/weathered-blue-industrial-air-compressor-dKthG-i_aFM"
+ },
+ "p17-welding": {
+  "dir": "products",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "width": 1600,
+  "height": 1066,
+  "color": "#192634",
+  "alt": "MIG welding arc and sparks on a steel workpiece",
+  "source": "https://unsplash.com/photos/welder-working-on-metal-with-sparks-9Q_pLLP_jmA"
+ },
+ "p18-safety": {
+  "dir": "products",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "width": 1600,
+  "height": 1066,
+  "color": "#2f260f",
+  "alt": "Row of yellow safety helmets",
+  "source": "https://unsplash.com/photos/several-bright-yellow-hard-hats-are-neatly-lined-up-LutB1xxyArA"
+ },
+ "p19-material-handling": {
+  "dir": "products",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "width": 1600,
+  "height": 1200,
+  "color": "#403d3a",
+  "alt": "Fleet of electric pallet trucks and stackers in a warehouse",
+  "source": "https://unsplash.com/photos/a-large-warehouse-filled-with-lots-of-machines-p0VP_TOAd5E"
+ },
+ "p20-water-treatment": {
+  "dir": "products",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "width": 1600,
+  "height": 1066,
+  "color": "#323a3d",
+  "alt": "Filtration pressure vessels connected with blue process pipework",
+  "source": "https://unsplash.com/photos/a-couple-of-water-tanks-sitting-next-to-each-other-wzcyEpk2eWw"
+ },
+ "p21-hoses": {
+  "dir": "products",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "width": 1600,
+  "height": 1200,
+  "color": "#523d19",
+  "alt": "Hydraulic hose assemblies on heavy equipment",
+  "source": "https://unsplash.com/photos/a-close-up-view-of-a-yellow-machine-E3mqhLHvfP8"
+ }
+}
