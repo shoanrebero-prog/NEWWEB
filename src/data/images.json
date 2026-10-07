@@ -1,0 +1,420 @@
+{
+ "hero-port": {
+  "dir": "hero",
+  "widths": [
+   640,
+   960,
+   1280,
+   1536,
+   2048
+  ],
+  "width": 2048,
+  "height": 1152,
+  "color": "#2f2c2f",
+  "pos": "45% 55%",
+  "alt": "Container terminal at dusk with gantry cranes, a berthed container ship, and cable drums and bulk bags staged on the quay",
+  "origin": "AI-generated (Figma generate_image, gpt-image model), original"
+ },
+ "p01-gypsum": {
+  "dir": "products/gypsum",
+  "widths": [
+   480,
+   800,
+   1200,
+   1536,
+   2048
+  ],
+  "width": 2048,
+  "height": 1365,
+  "color": "#56585d",
+  "pos": "30% 60%",
+  "alt": "Raw gypsum lumps and gypsum powder in front of palletised plasterboards and bulk bags in a materials warehouse",
+  "origin": "AI-generated (Figma generate_image, gpt-image model), original"
+ },
+ "p01-boards": {
+  "dir": "products/gypsum",
+  "widths": [
+   480,
+   800,
+   1200
+  ],
+  "width": 1200,
+  "height": 800,
+  "color": "#5b5754",
+  "pos": "40% 50%",
+  "alt": "Edges of stacked standard, moisture-resistant and fire-resistant gypsum boards on pallets",
+  "origin": "AI-generated (Figma generate_image, gpt-image model), original"
+ },
+ "p01-bulk": {
+  "dir": "products/gypsum",
+  "widths": [
+   480,
+   800,
+   1200
+  ],
+  "width": 1200,
+  "height": 800,
+  "color": "#636161",
+  "pos": "55% 60%",
+  "alt": "White FIBC jumbo bags, palletised 50 kg bags and crushed mineral lumps ready for export",
+  "origin": "AI-generated (Figma generate_image, gpt-image model), original"
+ },
+ "p02-cables": {
+  "dir": "products/electrical-cables",
+  "widths": [
+   480,
+   800,
+   1200,
+   1536,
+   2048
+  ],
+  "width": 2048,
+  "height": 1365,
+  "color": "#232225",
+  "pos": "38% 55%",
+  "alt": "Cut ends of four-core armoured power cables showing copper conductors, XLPE insulation and steel wire armour",
+  "origin": "AI-generated (Figma generate_image, gpt-image model), original"
+ },
+ "p02-mv": {
+  "dir": "products/electrical-cables",
+  "widths": [
+   480,
+   800,
+   1200
+  ],
+  "width": 1200,
+  "height": 800,
+  "color": "#24202b",
+  "pos": "40% 55%",
+  "alt": "Medium-voltage cable sample with conductor, semiconductive screens, XLPE insulation, copper tape screen and sheath",
+  "origin": "AI-generated (Figma generate_image, gpt-image model), original"
+ },
+ "p02-drums": {
+  "dir": "products/electrical-cables",
+  "widths": [
+   480,
+   800,
+   1200
+  ],
+  "width": 1200,
+  "height": 800,
+  "color": "#413c3c",
+  "pos": "50% 65%",
+  "alt": "Cable drums of power cable and coils of single-core building wire in a cable store",
+  "origin": "AI-generated (Figma generate_image, gpt-image model), original"
+ },
+ "p03-electrical-equipment": {
+  "dir": "products/electrical-equipment",
+  "widths": [
+   480,
+   800,
+   1200,
+   1536
+  ],
+  "width": 1536,
+  "height": 1024,
+  "color": "#41474d",
+  "pos": "30% 50%",
+  "alt": "Low-voltage switchgear line-up with withdrawable air circuit breaker and motor control units under cable trays",
+  "origin": "AI-generated (Figma generate_image, gpt-image model), original"
+ },
+ "p04-racking": {
+  "dir": "products/warehouse-racking",
+  "widths": [
+   480,
+   800,
+   1200,
+   1536,
+   2048
+  ],
+  "width": 2048,
+  "height": 1365,
+  "color": "#403f40",
+  "pos": "62% 55%",
+  "alt": "Electric reach truck placing a pallet in tall selective pallet racking in a modern warehouse",
+  "origin": "AI-generated (Figma generate_image, gpt-image model), original"
+ },
+ "p04-racking-b": {
+  "dir": "products/warehouse-racking",
+  "widths": [
+   480,
+   800,
+   1200
+  ],
+  "width": 1200,
+  "height": 800,
+  "color": "#3e3e42",
+  "pos": "55% 50%",
+  "alt": "Long aisle of selective pallet racking with a forklift at work",
+  "origin": "AI-generated (Figma generate_image, gpt-image model), original"
+ },
+ "p04-mezzanine": {
+  "dir": "products/warehouse-racking",
+  "widths": [
+   480,
+   800,
+   1200
+  ],
+  "width": 1200,
+  "height": 800,
+  "color": "#494640",
+  "pos": "45% 55%",
+  "alt": "Steel mezzanine with stairs, drive-in and cantilever racking and loading-bay doors",
+  "origin": "AI-generated (Figma generate_image, gpt-image model), original"
+ },
+ "p05-steel": {
+  "dir": "products/steel-metal",
+  "widths": [
+   480,
+   800,
+   1200,
+   1536
+  ],
+  "width": 1536,
+  "height": 1024,
+  "color": "#333537",
+  "pos": "35% 60%",
+  "alt": "Stacked H-beams, steel angles, rebar bundles and steel coils in a steel stockyard",
+  "origin": "AI-generated (Figma generate_image, gpt-image model), original"
+ },
+ "p06-valves": {
+  "dir": "products/pipes-valves-fittings",
+  "widths": [
+   480,
+   800,
+   1200,
+   1536
+  ],
+  "width": 1536,
+  "height": 1024,
+  "color": "#1f232a",
+  "pos": "62% 50%",
+  "alt": "Flanged gate valve, ball valve, flanges, elbow, tee, reducer and HDPE pipe on an inspection table",
+  "origin": "AI-generated (Figma generate_image, gpt-image model), original"
+ },
+ "p07-polymers": {
+  "dir": "products/plastics-polymers",
+  "widths": [
+   480,
+   800,
+   1200,
+   1536
+  ],
+  "width": 1536,
+  "height": 1024,
+  "color": "#4b5058",
+  "pos": "40% 65%",
+  "alt": "Polymer pellets, plastic sheets, stretch film, PVC and HDPE pipes and FIBC bags in a warehouse",
+  "origin": "AI-generated (Figma generate_image, gpt-image model), original"
+ },
+ "p08-chemicals": {
+  "dir": "products/chemicals-fertilizers",
+  "widths": [
+   480,
+   800,
+   1200,
+   1536
+  ],
+  "width": 1536,
+  "height": 1024,
+  "color": "#505358",
+  "pos": "45% 55%",
+  "alt": "Bagged fertilizer, IBC totes and chemical drums on spill pallets in a distribution warehouse",
+  "origin": "AI-generated (Figma generate_image, gpt-image model), original"
+ },
+ "p09-machinery": {
+  "dir": "products/industrial-machinery",
+  "widths": [
+   480,
+   800,
+   1200,
+   1536
+  ],
+  "width": 1536,
+  "height": 1024,
+  "color": "#34383f",
+  "pos": "40% 60%",
+  "alt": "Industrial gearmotor on a baseplate with bearings, conveyor, mixer and machine tools",
+  "origin": "AI-generated (Figma generate_image, gpt-image model), original"
+ },
+ "p10-agriculture": {
+  "dir": "products/agriculture-irrigation",
+  "widths": [
+   480,
+   800,
+   1200,
+   1536
+  ],
+  "width": 1536,
+  "height": 1024,
+  "color": "#433d33",
+  "pos": "55% 55%",
+  "alt": "Drip irrigation laterals along crop rows with a tractor sprayer and greenhouse tunnels",
+  "origin": "AI-generated (Figma generate_image, gpt-image model), original"
+ },
+ "p11-pumps": {
+  "dir": "products/water-pumps",
+  "widths": [
+   480,
+   800,
+   1200,
+   1536
+  ],
+  "width": 1536,
+  "height": 1024,
+  "color": "#484d54",
+  "pos": "35% 55%",
+  "alt": "Pressure booster set of vertical multistage pumps with end-suction pumps and a borehole pump",
+  "origin": "AI-generated (Figma generate_image, gpt-image model), original"
+ },
+ "p12-generators": {
+  "dir": "products/generators",
+  "widths": [
+   480,
+   800,
+   1200,
+   1536
+  ],
+  "width": 1536,
+  "height": 1024,
+  "color": "#2b2a2e",
+  "pos": "50% 55%",
+  "alt": "Canopy diesel generator set with service door open showing engine and alternator",
+  "origin": "AI-generated (Figma generate_image, gpt-image model), original"
+ },
+ "p13-engines": {
+  "dir": "products/engines",
+  "widths": [
+   480,
+   800,
+   1200,
+   1536
+  ],
+  "width": 1536,
+  "height": 1024,
+  "color": "#242527",
+  "pos": "35% 50%",
+  "alt": "Six-cylinder industrial diesel engine with filters, piston, gaskets and coupling on a workbench",
+  "origin": "AI-generated (Figma generate_image, gpt-image model), original"
+ },
+ "p14-construction": {
+  "dir": "products/construction-equipment",
+  "widths": [
+   480,
+   800,
+   1200,
+   1536
+  ],
+  "width": 1536,
+  "height": 1024,
+  "color": "#4f4133",
+  "pos": "60% 50%",
+  "alt": "Excavator loading a dump truck with a wheel loader and roller on a construction site",
+  "origin": "AI-generated (Figma generate_image, gpt-image model), original"
+ },
+ "p15-cleaning": {
+  "dir": "products/cleaning-equipment",
+  "widths": [
+   480,
+   800,
+   1200,
+   1536
+  ],
+  "width": 1536,
+  "height": 1024,
+  "color": "#4c4e4f",
+  "pos": "45% 60%",
+  "alt": "Floor scrubbers, pressure washers and an industrial vacuum lined up in a facility",
+  "origin": "AI-generated (Figma generate_image, gpt-image model), original"
+ },
+ "p16-compressors": {
+  "dir": "products/air-compressors",
+  "widths": [
+   480,
+   800,
+   1200,
+   1536
+  ],
+  "width": 1536,
+  "height": 1024,
+  "color": "#545658",
+  "pos": "60% 55%",
+  "alt": "Rotary screw compressor, refrigerated dryer, filters and air receiver in a compressor room",
+  "origin": "AI-generated (Figma generate_image, gpt-image model), original"
+ },
+ "p17-welding": {
+  "dir": "products/welding",
+  "widths": [
+   480,
+   800,
+   1200,
+   1536
+  ],
+  "width": 1536,
+  "height": 1024,
+  "color": "#201c1d",
+  "pos": "40% 55%",
+  "alt": "MIG welding machine with wire feeder, torch, electrodes, helmet and gloves on a welding table",
+  "origin": "AI-generated (Figma generate_image, gpt-image model), original"
+ },
+ "p18-safety": {
+  "dir": "products/safety-security",
+  "widths": [
+   480,
+   800,
+   1200,
+   1536
+  ],
+  "width": 1536,
+  "height": 1024,
+  "color": "#2a2422",
+  "pos": "45% 50%",
+  "alt": "Safety helmets, eyewear, gloves, boots, harness, extinguisher, CCTV camera and first-aid kit",
+  "origin": "AI-generated (Figma generate_image, gpt-image model), original"
+ },
+ "p19-material-handling": {
+  "dir": "products/material-handling",
+  "widths": [
+   480,
+   800,
+   1200,
+   1536
+  ],
+  "width": 1536,
+  "height": 1024,
+  "color": "#53524f",
+  "pos": "35% 60%",
+  "alt": "Diesel and electric forklifts, a stacker and pallet trucks under an overhead crane hoist",
+  "origin": "AI-generated (Figma generate_image, gpt-image model), original"
+ },
+ "p20-water-treatment": {
+  "dir": "products/environmental-water-treatment",
+  "widths": [
+   480,
+   800,
+   1200,
+   1536
+  ],
+  "width": 1536,
+  "height": 1024,
+  "color": "#4b535c",
+  "pos": "40% 55%",
+  "alt": "Reverse osmosis skid with FRP membrane vessels, filtration vessels and dosing tanks",
+  "origin": "AI-generated (Figma generate_image, gpt-image model), original"
+ },
+ "p21-hoses": {
+  "dir": "products/industrial-hoses",
+  "widths": [
+   480,
+   800,
+   1200,
+   1536
+  ],
+  "width": 1536,
+  "height": 1024,
+  "color": "#1f2025",
+  "pos": "40% 60%",
+  "alt": "Hydraulic hose assemblies, camlock and quick couplings, clamps and industrial hoses",
+  "origin": "AI-generated (Figma generate_image, gpt-image model), original"
+ }
+}
