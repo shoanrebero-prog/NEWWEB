@@ -20,7 +20,7 @@ blurred backdrop was toned down.
 **Business owner — "Does this company look credible enough for a serious supply discussion?"**
 Yes, with one caveat. The brand system, photography and restraint read as an established B2B
 operation, and the honesty statements (Oman-only presence, no invented partners) support that.
-*Caveat:* all imagery is representative stock photography. Adding GES's own photographs (cargo,
+*Caveat:* all imagery is original AI-generated illustration of each category (see `docs/IMAGES.md`). Adding GES's own photographs (cargo,
 packing, loading at Salalah) is the single highest-value improvement after launch.
 *Change made during review:* removed a line about "access to Port of Salalah" because the
 profile wording could not be confirmed.

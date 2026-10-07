@@ -25,7 +25,7 @@ export function pictureFrom(IMAGES) {
       `<source type="image/webp" srcset="${set('webp')}" sizes="${sizes}">` +
       `<img src="${src(name, fw, 'webp')}" alt="${esc(a)}" width="${im.width}" height="${im.height}"` +
       ` loading="${eager ? 'eager' : 'lazy'}" decoding="async"${priority ? ' fetchpriority="high"' : ''}` +
-      ` style="background-color:${im.color}">` +
+      ` style="background-color:${im.color}${im.pos ? `;object-position:${im.pos}` : ''}">` +
       `</picture>`
     );
   }

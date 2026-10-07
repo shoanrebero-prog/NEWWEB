@@ -1,51 +1,65 @@
 # Image register
 
-All 28 photographs are real photography from Unsplash (Unsplash Licence: free for commercial use,
-no attribution required). Sources are kept here and in `scripts/images/manifest.json` so the
-choice can be audited or replaced.
+All 28 images on the site are **original AI-generated images** created for GES Global Trade
+(Figma `generate_image`, gpt-image model). The earlier stock photographs have all been removed:
+no Unsplash or other third-party images remain, and nothing is referenced that is not in this list.
 
-**Selection process.** About 150 searches across the 21 platforms produced ~2,000 candidates, reviewed
-as contact sheets, then shortlisted ones at full size. Rejected: wrong product anatomy,
-consumer instead of industrial products, prominent third-party branding, legible ratings or
-specifications printed on product, staged or AI-looking images.
+## Process
+1. **Research.** For each category, real-world references were checked first: manufacturer
+   and dealer catalogues, datasheets and spec sheets (cable construction to IEC 60502 / BS 5467,
+   genset canopy construction, RO skid and FRP vessel layouts, booster-set configurations, LV
+   switchgear form-separation line-ups, FIBC bag construction, racking components). These were used
+   only to understand product anatomy, materials, proportions and settings. No reference image was
+   copied and no composition was reproduced.
+2. **Brief.** Each prompt specifies product anatomy, environment, camera/lens, lighting and grade,
+   and forbids text, logos, brand names and printed markings. See `docs/IMAGE-BRIEFS.md`.
+3. **Inspect and reject.** Every image was reviewed at full size. Rejected and regenerated:
+   - **Steel v1:** H-beams rendered with impossible double webs.
+   - **Racking v1:** busier composition, kept as a detail image instead of the flagship.
+   - **Hero v1:** over-saturated and too obviously AI-looking.
+4. **Optimise.** `scripts/images/process.py` applies one light grade to the whole set, then
+   writes AVIF + WebP at 480–2048 px. Each image carries a focal point (CSS `object-position`) so
+   mobile and card crops keep the product in frame.
 
-**Treatment (`scripts/images/process.py`).**
-1. Retouch: manufacturer marks removed by clone/inpaint (column "Retouched").
-2. One consistent grade across the set — soft highlight roll-off, cool deep shadows, mild contrast.
-3. Responsive AVIF + WebP at 480–2400 px; the hero image is preloaded, everything else lazy-loads.
+## Honest limits
+- These are illustrative visuals of each product category, not photographs of GES stock,
+  facilities or shipments, and the site does not present them as such. Adding GES's own
+  photography over time (cargo, packing, loading) would add credibility.
+- The generator outputs 1536 px masters. Widths of 2048 px (hero and flagships, for large or
+  retina screens) are Lanczos-upscaled. They look sharp at normal viewing, but on 4K screens
+  they are softer than a native high-resolution photograph would be.
 
-**Honest limits.** These are representative photographs of each product category — not photographs
-of GES stock, facilities or shipments, and the site does not present them as such. Replacing them
-with GES's own photography over time would strengthen credibility; to swap an image, edit
-the manifest entry and run `python3 scripts/images/process.py <name>`.
+## Files
+Source masters: `assets/source/<name>.jpg`. To replace one, overwrite the master and run
+`python3 scripts/images/process.py <name>`.
 
-| Image | Art direction / why chosen | Retouched | Source |
-|---|---|---|---|
-| `hero-port` | Single cinematic scene: dusk container terminal, leading lines into depth. Chosen over a quay view with prominent carrier branding. | — | [Unsplash](https://unsplash.com/photos/shipping-port-with-containers-and-cranes-sWOvgOOFk1g) |
-| `p01-gypsum` | Bulk white mineral stockpile with radial stacker — reads as bulk supply at scale. Plant signage retouched out. | yes | [Unsplash](https://unsplash.com/photos/large-sand-and-gravel-piles-with-industrial-conveyors-HkxPrTZGEl8) |
-| `p01-boards` | Palletised plasterboard in racking — board edges, real pallet and rack. | yes | [Unsplash](https://unsplash.com/photos/stack-of-wooden-planks-on-brates-12f58hsO1Gk) |
-| `p01-lumps` | Raw mineral lumps, natural texture and dust. | — | [Unsplash](https://unsplash.com/photos/brown-and-white-stone-fragments-4X5ySjDNLPg) |
-| `p01-powder` | White powder stockpile macro, low-key light. | — | [Unsplash](https://unsplash.com/photos/rough-snow-covered-terrain-against-a-dark-background-oIw4LRylwg8) |
-| `p02-cables` | Macro of copper conductor coil — physically real copper, controlled warm light on dark. | — | [Unsplash](https://unsplash.com/photos/white-and-brown-spiral-light-Uwq_F5G4yOo) |
-| `p02-drums` | Cable drums loaded with power cable — typical supply format. | — | [Unsplash](https://unsplash.com/photos/a-pile-of-yellow-and-green-hoses-sitting-on-the-side-of-a-road-gc85oQrQCt0) |
-| `p02-braid` | Stranded copper conductor detail. | — | [Unsplash](https://unsplash.com/photos/a-close-up-of-a-rope-on-a-black-background-xPVUA7Jrl58) |
-| `p03-electrical-equipment` | LV switchgear line-up in an electrical room. Cropped to 3:2. | — | [Unsplash](https://unsplash.com/photos/gray-machine-s89Z5V0plTY) |
-| `p04-racking` | Selective pallet racking aisle with counterbalance forklift. Manufacturer mast lettering cloned out. | yes | [Unsplash](https://unsplash.com/photos/a-large-warehouse-filled-with-lots-of-pallets-OnbSOhz0oig) |
-| `p04-racking-b` | Newly installed pallet racking with column guards — project supply context. | — | [Unsplash](https://unsplash.com/photos/a-warehouse-with-blue-and-yellow-poles-qXwXKwaT8mU) |
-| `p05-steel` | Steel pipe stock, end-on. | — | [Unsplash](https://unsplash.com/photos/a-large-stack-of-pipes-stacked-on-top-of-each-other-F4nEetWGt0A) |
-| `p06-valves` | Flanged gate valves on plant pipework. | — | [Unsplash](https://unsplash.com/photos/industrial-pipes-with-red-valves-PBhR1Kw1wXk) |
-| `p07-polymers` | Polymer resin granules macro. | — | [Unsplash](https://unsplash.com/photos/blue-and-white-square-beads-ooxMySOfRRU) |
-| `p08-chemicals` | Steel chemical drums; no legible product labelling. | — | [Unsplash](https://unsplash.com/photos/stacked-industrial-metal-barrels-yKs_eEXZEzg) |
-| `p09-machinery` | Automated production line in a modern hall. | — | [Unsplash](https://unsplash.com/photos/a-large-machine-in-a-large-building-pWUyHVJgLhg) |
-| `p10-agriculture` | Centre-pivot irrigation over crop. | — | [Unsplash](https://unsplash.com/photos/a-sprinkler-spraying-water-on-a-green-field-6DMht7wYt6g) |
-| `p11-pumps` | Inline pump sets with gauges and valves. | — | [Unsplash](https://unsplash.com/photos/a-group-of-pipes-and-valves-in-a-room-KWZMx4T8Y1k) |
-| `p12-generators` | Generator sets with exhaust stacks at a power installation. Model lettering retouched out. | yes | [Unsplash](https://unsplash.com/photos/a-factory-with-a-lot-of-green-and-white-machinery-wUuq69GGLnU) |
-| `p13-engines` | Diesel engine fuel-injection detail. | — | [Unsplash](https://unsplash.com/photos/vehicle-engine-xnqvX5u-ZGQ) |
-| `p14-construction` | Wheel loader with full bucket. Manufacturer logos retouched out. | yes | [Unsplash](https://unsplash.com/photos/yellow-and-black-heavy-equipment-on-brown-field-during-daytime-N1LBcqLP9ec) |
-| `p15-cleaning` | Pressure washing in use (operator in hi-vis). | — | [Unsplash](https://unsplash.com/photos/a-man-in-a-yellow-jacket-is-using-a-pressure-washer-e2k842P9a2I) |
-| `p16-compressors` | Twin-cylinder piston compressor on receiver. Chosen over a sharper image that showed AI-render artefacts on its nameplate. | — | [Unsplash](https://unsplash.com/photos/weathered-blue-industrial-air-compressor-dKthG-i_aFM) |
-| `p17-welding` | MIG arc and sparks. | — | [Unsplash](https://unsplash.com/photos/welder-working-on-metal-with-sparks-9Q_pLLP_jmA) |
-| `p18-safety` | Row of safety helmets. | — | [Unsplash](https://unsplash.com/photos/several-bright-yellow-hard-hats-are-neatly-lined-up-LutB1xxyArA) |
-| `p19-material-handling` | Fleet of pallet trucks/stackers. Manufacturer marks on seats and masts retouched out. | yes | [Unsplash](https://unsplash.com/photos/a-large-warehouse-filled-with-lots-of-machines-p0VP_TOAd5E) |
-| `p20-water-treatment` | Filtration pressure vessels with process pipework. | — | [Unsplash](https://unsplash.com/photos/a-couple-of-water-tanks-sitting-next-to-each-other-wzcyEpk2eWw) |
-| `p21-hoses` | Hydraulic hose assemblies on heavy equipment. | — | [Unsplash](https://unsplash.com/photos/a-close-up-view-of-a-yellow-machine-E3mqhLHvfP8) |
+| Image | Folder | Content / alt text |
+|---|---|---|
+| `hero-port` | `public/img/hero/` | Container terminal at dusk with gantry cranes, a berthed container ship, and cable drums and bulk bags staged on the quay |
+| `p01-gypsum` | `public/img/products/gypsum/` | Raw gypsum lumps and gypsum powder in front of palletised plasterboards and bulk bags in a materials warehouse |
+| `p01-boards` | `public/img/products/gypsum/` | Edges of stacked standard, moisture-resistant and fire-resistant gypsum boards on pallets |
+| `p01-bulk` | `public/img/products/gypsum/` | White FIBC jumbo bags, palletised 50 kg bags and crushed mineral lumps ready for export |
+| `p02-cables` | `public/img/products/electrical-cables/` | Cut ends of four-core armoured power cables showing copper conductors, XLPE insulation and steel wire armour |
+| `p02-mv` | `public/img/products/electrical-cables/` | Medium-voltage cable sample with conductor, semiconductive screens, XLPE insulation, copper tape screen and sheath |
+| `p02-drums` | `public/img/products/electrical-cables/` | Cable drums of power cable and coils of single-core building wire in a cable store |
+| `p03-electrical-equipment` | `public/img/products/electrical-equipment/` | Low-voltage switchgear line-up with withdrawable air circuit breaker and motor control units under cable trays |
+| `p04-racking` | `public/img/products/warehouse-racking/` | Electric reach truck placing a pallet in tall selective pallet racking in a modern warehouse |
+| `p04-racking-b` | `public/img/products/warehouse-racking/` | Long aisle of selective pallet racking with a forklift at work |
+| `p04-mezzanine` | `public/img/products/warehouse-racking/` | Steel mezzanine with stairs, drive-in and cantilever racking and loading-bay doors |
+| `p05-steel` | `public/img/products/steel-metal/` | Stacked H-beams, steel angles, rebar bundles and steel coils in a steel stockyard |
+| `p06-valves` | `public/img/products/pipes-valves-fittings/` | Flanged gate valve, ball valve, flanges, elbow, tee, reducer and HDPE pipe on an inspection table |
+| `p07-polymers` | `public/img/products/plastics-polymers/` | Polymer pellets, plastic sheets, stretch film, PVC and HDPE pipes and FIBC bags in a warehouse |
+| `p08-chemicals` | `public/img/products/chemicals-fertilizers/` | Bagged fertilizer, IBC totes and chemical drums on spill pallets in a distribution warehouse |
+| `p09-machinery` | `public/img/products/industrial-machinery/` | Industrial gearmotor on a baseplate with bearings, conveyor, mixer and machine tools |
+| `p10-agriculture` | `public/img/products/agriculture-irrigation/` | Drip irrigation laterals along crop rows with a tractor sprayer and greenhouse tunnels |
+| `p11-pumps` | `public/img/products/water-pumps/` | Pressure booster set of vertical multistage pumps with end-suction pumps and a borehole pump |
+| `p12-generators` | `public/img/products/generators/` | Canopy diesel generator set with service door open showing engine and alternator |
+| `p13-engines` | `public/img/products/engines/` | Six-cylinder industrial diesel engine with filters, piston, gaskets and coupling on a workbench |
+| `p14-construction` | `public/img/products/construction-equipment/` | Excavator loading a dump truck with a wheel loader and roller on a construction site |
+| `p15-cleaning` | `public/img/products/cleaning-equipment/` | Floor scrubbers, pressure washers and an industrial vacuum lined up in a facility |
+| `p16-compressors` | `public/img/products/air-compressors/` | Rotary screw compressor, refrigerated dryer, filters and air receiver in a compressor room |
+| `p17-welding` | `public/img/products/welding/` | MIG welding machine with wire feeder, torch, electrodes, helmet and gloves on a welding table |
+| `p18-safety` | `public/img/products/safety-security/` | Safety helmets, eyewear, gloves, boots, harness, extinguisher, CCTV camera and first-aid kit |
+| `p19-material-handling` | `public/img/products/material-handling/` | Diesel and electric forklifts, a stacker and pallet trucks under an overhead crane hoist |
+| `p20-water-treatment` | `public/img/products/environmental-water-treatment/` | Reverse osmosis skid with FRP membrane vessels, filtration vessels and dosing tanks |
+| `p21-hoses` | `public/img/products/industrial-hoses/` | Hydraulic hose assemblies, camlock and quick couplings, clamps and industrial hoses |

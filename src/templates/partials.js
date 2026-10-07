@@ -11,7 +11,7 @@ export { esc, arrow };
 
 export function head({ title, description, path = '/', image = 'hero-port', type = 'website', jsonld = [], preload = '' }) {
   const url = site.url + path;
-  const ogImg = site.url + imgPath(image, IMAGES[image].widths.at(-1) >= 1600 ? 1600 : IMAGES[image].widths.at(-1), 'webp');
+  const ogImg = site.url + imgPath(image, IMAGES[image].widths.filter((w) => w <= 1600).at(-1), 'webp');
   return `<!doctype html>
 <html lang="en">
 <head>

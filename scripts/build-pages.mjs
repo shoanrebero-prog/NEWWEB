@@ -6,7 +6,7 @@ import sharp from 'sharp';
 import { site } from '../src/config.js';
 import { products, pad } from '../src/data/products.js';
 import { homePage } from '../src/templates/home.js';
-import { head, header, footer, picture, esc, arrow, imgPath } from '../src/templates/partials.js';
+import { head, header, footer, picture, esc, arrow, imgPath, IMAGES } from '../src/templates/partials.js';
 import { productDetail } from '../src/templates/shared.js';
 import { enquirySection } from '../src/templates/enquiry.js';
 
@@ -51,7 +51,7 @@ products.forEach((p, i) => {
       itemListElement: p.groups.map((g) => ({ '@type': 'OfferCatalog', name: g.title, itemListElement: g.items.map((n) => ({ '@type': 'Offer', itemOffered: { '@type': 'Product', name: n } })) })),
     },
   ];
-  const preload = `<link rel="preload" as="image" type="image/avif" imagesrcset="${products && [480, 800, 1200, 1600].map((w) => `${imgPath(p.image, w, 'avif')} ${w}w`).join(', ')}" imagesizes="100vw" fetchpriority="high">`;
+  const preload = `<link rel="preload" as="image" type="image/avif" imagesrcset="${IMAGES[p.image].widths.map((w) => `${imgPath(p.image, w, 'avif')} ${w}w`).join(', ')}" imagesizes="100vw" fetchpriority="high">`;
   write(
     `products/${p.slug}/index.html`,
     `${head({ title, description, path: `/products/${p.slug}/`, image: p.image, jsonld, preload })}

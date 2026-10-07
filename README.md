@@ -25,17 +25,18 @@ npm run preview   # serve dist/
 | `src/js/enquiry.js` | Form validation, file upload, delivery |
 | `src/js/symbol3d.js` | 3D brand symbol (Three.js, lazy-loaded) |
 | `public/brand/` | Logo system (SVG + PNG) |
-| `public/img/` | Optimised AVIF/WebP images (generated) |
+| `assets/source/` | Original AI-generated image masters (1536 px) |
+| `public/img/` | Optimised AVIF/WebP images, one folder per category (generated) |
 | `scripts/brand/build-logo.py` | Generates every logo variant from one geometric definition |
-| `scripts/images/` | Image manifest + pipeline (download → retouch → grade → responsive encode) |
+| `scripts/images/` | Image manifest + pipeline (grade → responsive AVIF/WebP, focal points) |
 | `scripts/build-map.mjs` | Builds the dot-matrix market map as static SVG data |
 | `docs/` | Strategy, image register, commercial review & QA |
 
 ### Adding or editing a product platform
 
 1. Add/edit the object in `src/data/products.js`.
-2. Add an image entry to `scripts/images/manifest.json` and run `python3 scripts/images/process.py <name>`
-   (needs `pip install opencv-python-headless`).
+2. Add the master to `assets/source/`, an entry to `scripts/images/manifest.json`, and run
+   `python3 scripts/images/process.py <name>` (needs `pip install opencv-python-headless`).
 3. `npm run build`. The slider, platform index, detail panel, product page, sitemap, footer and
    enquiry dropdown are all generated from the data.
 

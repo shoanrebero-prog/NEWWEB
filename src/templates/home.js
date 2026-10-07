@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import { site } from '../config.js';
 import { products, flagships, byId, pad } from '../data/products.js';
 import { logo } from '../brand/logo.js';
-import { head, header, footer, picture, imgPath, esc, arrow } from './partials.js';
+import { head, header, footer, picture, imgPath, esc, arrow, IMAGES } from './partials.js';
 import { enquirySection } from './enquiry.js';
 
 const MAP = JSON.parse(fs.readFileSync(new URL('../data/map.json', import.meta.url), 'utf8'));
@@ -371,7 +371,7 @@ const industries = () => `
 /* ---------------- Page ---------------- */
 export function homePage() {
   const heroImg = (w, ext) => imgPath('hero-port', w, ext);
-  const preload = `<link rel="preload" as="image" type="image/avif" imagesrcset="${[640, 960, 1280, 1920, 2400].map((w) => `${heroImg(w, 'avif')} ${w}w`).join(', ')}" imagesizes="100vw" fetchpriority="high">`;
+  const preload = `<link rel="preload" as="image" type="image/avif" imagesrcset="${IMAGES['hero-port'].widths.map((w) => `${heroImg(w, 'avif')} ${w}w`).join(', ')}" imagesizes="100vw" fetchpriority="high">`;
   const jsonld = [
     {
       '@context': 'https://schema.org',
